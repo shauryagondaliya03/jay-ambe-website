@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-royal-50: #eef3ff;
+  --color-royal-100: #dce6ff;
+  --color-royal-200: #bccdff;
+  --color-royal-300: #8fa9f7;
+  --color-royal-400: #5f7fe8;
+  --color-royal-500: #3a5bd0;
+  --color-royal-600: #2644b3;
+  --color-royal-700: #1d3590;
+  --color-royal-800: #172a72;
+  --color-royal-900: #101d54;
+  --color-royal-950: #0a1236;
+
+  --color-gold-50: #fffbeb;
+  --color-gold-100: #fef3c7;
+  --color-gold-200: #fde68a;
+  --color-gold-300: #fcd34d;
+  --color-gold-400: #f5c542;
+  --color-gold-500: #e0a81c;
+  --color-gold-600: #bd8610;
+  --color-gold-700: #8f650f;
+
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-fade-up: fade-up 0.7s ease-out both;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+html { scroll-behavior: smooth; }
+body { @apply bg-white text-slate-700 antialiased; }
+section[id] { scroll-margin-top: 5.5rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
