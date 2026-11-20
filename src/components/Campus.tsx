@@ -2,9 +2,9 @@ import Image from "next/image";
 import { Calculator, Bot, Puzzle, Medal, PartyPopper, NotebookPen, ClipboardCheck, Target } from "lucide-react";
 
 const PHOTOS = [
-  { src: "/images/campus-entrance.jpg", alt: "Main entrance of N.C. Thakar Education Campus, Jay Ambe International School, Surat", cap: "N.C. Thakar Education Campus", span: "md:col-span-2 md:row-span-2", w: 1160, h: 542 },
+  { src: "/images/main-gate.jpg", alt: "Main gate of Jay Ambe International School, Surat", cap: "Main gate · Jay Ambe International School", span: "md:col-span-2 md:row-span-2", w: 1504, h: 810 },
+  { src: "/images/entrance-flowers.jpg", alt: "Entrance of N.C. Thakar Education Campus, Jay Ambe International School, Surat", cap: "N.C. Thakar Education Campus", span: "", w: 1504, h: 810 },
   { src: "/images/playground.jpg", alt: "Children's play area and open green ground on the school campus", cap: "Play area & open ground", span: "", w: 1504, h: 810 },
-  { src: "/images/cricket-nets.jpg", alt: "Jay Ambe Cricket Academy practice nets on campus", cap: "Jay Ambe Cricket Academy nets", span: "", w: 1504, h: 810 },
 ];
 
 const PROGRAMS = [
